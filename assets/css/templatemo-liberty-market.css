@@ -41,6 +41,17 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+@media only screen and (max-width: 700px){
+  img.logo{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  img.logo { width: 100%; }
+}
+
 img.logo{
   max-width: 15%;
   border-radius: 20%;
@@ -599,15 +610,21 @@ Header Style
   .header-area .main-nav:before {
     display: none;
   }
+  img.logo{
+    max-width: 50px;
+  }
 }
 
 @media (max-width: 992px) {
   .header-area {
     top: 0;
   }
+  img.logo{
+    max-width: 50px;
+  }
   .header-area .main-nav {
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: 25px;
   }
   .header-area .main-nav .nav {
     height: auto;
